@@ -1,0 +1,185 @@
+actions: []
+allowlist: []
+custom_types: null
+functions: []
+query_collections: []
+remote_schemas: []
+tables:
+- array_relationships: []
+  configuration:
+    custom_column_names: {}
+    custom_root_fields:
+      delete: null
+      insert: null
+      select: null
+      select_aggregate: null
+      select_by_pk: null
+      update: null
+  delete_permissions: []
+  event_triggers: []
+  insert_permissions: []
+  is_enum: false
+  object_relationships:
+  - comment: null
+    name: user
+    using:
+      foreign_key_constraint_on: user_id
+  - comment: null
+    name: address
+    using:
+      foreign_key_constraint_on: address_id
+  - comment: null
+    name: cart
+    using:
+      foreign_key_constraint_on: cart_id
+  select_permissions: []
+  table: orders
+  update_permissions: []
+- array_relationships: []
+  configuration:
+    custom_column_names: {}
+    custom_root_fields:
+      delete: null
+      insert: null
+      select: null
+      select_aggregate: null
+      select_by_pk: null
+      update: null
+  delete_permissions: []
+  event_triggers: []
+  insert_permissions: []
+  is_enum: false
+  object_relationships:
+  - comment: null
+    name: item
+    using:
+      foreign_key_constraint_on: item_id
+  - comment: null
+    name: cart
+    using:
+      foreign_key_constraint_on: cart_id
+  select_permissions: []
+  table: cart_items
+  update_permissions: []
+- array_relationships:
+  - comment: null
+    name: addresses
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table: addresses
+  - comment: null
+    name: carts
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table: carts
+  - comment: null
+    name: orders
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table: orders
+  configuration:
+    custom_column_names: {}
+    custom_root_fields:
+      delete: null
+      insert: null
+      select: null
+      select_aggregate: null
+      select_by_pk: null
+      update: null
+  delete_permissions: []
+  event_triggers: []
+  insert_permissions: []
+  is_enum: false
+  object_relationships: []
+  select_permissions: []
+  table: users
+  update_permissions: []
+- array_relationships:
+  - comment: null
+    name: cart_items
+    using:
+      foreign_key_constraint_on:
+        column: cart_id
+        table: cart_items
+  - comment: null
+    name: orders
+    using:
+      foreign_key_constraint_on:
+        column: cart_id
+        table: orders
+  configuration:
+    custom_column_names: {}
+    custom_root_fields:
+      delete: null
+      insert: null
+      select: null
+      select_aggregate: null
+      select_by_pk: null
+      update: null
+  delete_permissions: []
+  event_triggers: []
+  insert_permissions: []
+  is_enum: false
+  object_relationships:
+  - comment: null
+    name: user
+    using:
+      foreign_key_constraint_on: user_id
+  select_permissions: []
+  table: carts
+  update_permissions: []
+- array_relationships:
+  - comment: null
+    name: orders
+    using:
+      foreign_key_constraint_on:
+        column: address_id
+        table: orders
+  configuration:
+    custom_column_names: {}
+    custom_root_fields:
+      delete: null
+      insert: null
+      select: null
+      select_aggregate: null
+      select_by_pk: null
+      update: null
+  delete_permissions: []
+  event_triggers: []
+  insert_permissions: []
+  is_enum: false
+  object_relationships:
+  - comment: null
+    name: user
+    using:
+      foreign_key_constraint_on: user_id
+  select_permissions: []
+  table: addresses
+  update_permissions: []
+- array_relationships:
+  - comment: null
+    name: cart_items
+    using:
+      foreign_key_constraint_on:
+        column: item_id
+        table: cart_items
+  configuration:
+    custom_column_names: {}
+    custom_root_fields:
+      delete: null
+      insert: null
+      select: null
+      select_aggregate: null
+      select_by_pk: null
+      update: null
+  delete_permissions: []
+  event_triggers: []
+  insert_permissions: []
+  is_enum: false
+  object_relationships: []
+  select_permissions: []
+  table: items
+  update_permissions: []

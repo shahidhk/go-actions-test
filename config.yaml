@@ -1,0 +1,6 @@
+action:
+  framework: go-http
+  handler_directory: service/app
+  routes_path: service/app/main.go
+  webhook: http://action-service:4000
+endpoint: http://localhost:8080

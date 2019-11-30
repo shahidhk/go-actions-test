@@ -1,0 +1,3 @@
+github.com/graphql-go/graphql v0.7.6/go.mod h1:k6yrAYQaSP59DC5UVxbgxESlmVyojThKdORUqGDGmrI=
+github.com/shahidhk/gql v0.0.0-20191108061618-eff92bd8798b h1:Vt+5rpt2cZcHevvbigPvSx8jz9rQbKHPk9od0OM5Q/U=
+github.com/shahidhk/gql v0.0.0-20191108061618-eff92bd8798b/go.mod h1:tB13SB3qhP9i12q7zm9nJbkEMejAE5zas5vCVNKBXvA=
